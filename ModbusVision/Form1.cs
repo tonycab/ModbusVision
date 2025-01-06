@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using ModbusVisionLib;
 using ModbusVisionLib.Modbus.Protocol;
 using ModbusVisionLib.Modbus.IO;
-using ModbusVisionLib.Modbus.LeCreuset;
 using System.Threading;
 using System.Globalization;
 
@@ -23,7 +22,7 @@ namespace ModbusVision
 			InitializeComponent();
 		}
 
-		LeCreusetModbus mb;
+		ExempleModbus mb;
 		private void Form1_Load(object sender, EventArgs e)
 		{
             //Simulation envois de données aléatoirement cohérente
@@ -46,7 +45,7 @@ namespace ModbusVision
 			};
 
 			//Intanciation d'une communication Modbus avec le PLC
-			mb = new LeCreusetModbus("10.101.53.35", 502,21128,21000);
+			mb = new ExempleModbus("10.101.53.35", 502,21128,21000);
 
 			//Abonnement évennement changement d'état de la connection Modbus
 			mb.ModbusMasterStateEventArgs += StateModbus;

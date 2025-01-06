@@ -31,8 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NModbus">
-      <HintPath>..\..\..\..\Desktop\Projet C#\Nouveau dossier (4)\AnomalyDetection\AnomalyDetection.Technique\bin\Debug\NModbus.dll</HintPath>
+    <Reference Include="NModbus, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\NModbus.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,14 +50,12 @@
     <Compile Include="Modbus\IO\DigitalOutputSignal.cs" />
     <Compile Include="Modbus\IO\SignalOutput.cs" />
     <Compile Include="Modbus\IO\SignalInput.cs" />
-    <Compile Include="Modbus\LeCreuset\LeCreusetModbus.cs" />
     <Compile Include="Modbus\Protocol\ModbusTCPMaster.cs" />
     <Compile Include="Modbus\Protocol\ModbusTCPMasterEventArgs.cs" />
     <Compile Include="Modbus\Protocol\StateConnect.cs" />
     <Compile Include="Modbus\Protocol\ThreadedBindingList.cs" />
     <Compile Include="Modbus\IO\DigitalInputSignal.cs" />
     <Compile Include="Modbus\Protocol\Extensions.cs" />
-    <Compile Include="Modbus\LeCreuset\ICom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Modbus\IO\Signal.cs" />
   </ItemGroup>

@@ -18,7 +18,7 @@ namespace ModbusVisionLib.Modbus.Protocol
 {
  
 	
-	internal class ModbusTCPMaster : Dictionary<string, Signal>
+	public class ModbusTCPMaster : Dictionary<string, Signal>
 	{
 		#region Properties public
 

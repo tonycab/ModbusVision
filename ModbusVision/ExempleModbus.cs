@@ -5,15 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using ModbusVisionLib.Modbus.Protocol;
 using ModbusVisionLib.Modbus.IO;
-using SiiF_VISION.Technique.Communications;
 using System.Globalization;
 using System.Threading;
 using System.ComponentModel;
-using NModbus;
 
-namespace ModbusVisionLib.Modbus.LeCreuset
+
+namespace ModbusVision
 {
-	public class LeCreusetModbus : ICom
+	public class ExempleModbus 
 	{
 
 		#region properties public
@@ -176,7 +175,7 @@ namespace ModbusVisionLib.Modbus.LeCreuset
 		/// <param name="ip"></param>
 		/// <param name="port"></param>
 		/// <param name="logger"></param>
-		public LeCreusetModbus(string ip, int port,ushort startInput, ushort startOutput)
+		public ExempleModbus(string ip, int port,ushort startInput, ushort startOutput)
 		{
 
 			CultureInfo.CurrentCulture = new CultureInfo("fr-FR", false);
