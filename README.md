@@ -2,9 +2,7 @@
 
 # ModbusCommunication
 
-ModbusCommunication est une librairie C# qui encapsule la librairie ➡️[Nmodbus](https://github.com/NModbus/NModbus) et ajoute une fonctionnalité de lecture/écrire cyclique.
-
-
+ModbusCommunication est une librairie C# qui encapsule la librairie ➡️[Nmodbus](https://github.com/NModbus/NModbus) et ajoute une fonctionnalité de lecture/écriture cyclique.
 
 ```mermaid
 sequenceDiagram
@@ -14,9 +12,7 @@ sequenceDiagram
 ```
 <!-- APP -->
 <div align="center">
-  <a href="https://github.com/tonycab/BarCodeToPlc">
     <img src="Images/Capture1.png" alt="Logo" width="800" >
-  </a>
 </div>
 
 > [!WARNING]
